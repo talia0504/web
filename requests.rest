@@ -1,0 +1,43 @@
+###
+GET  http://localhost:3000/post/626402b2d0fb472e5367b166
+
+###
+
+POST  http://localhost:3000/post
+Content-Type:application/json
+
+{
+    "message":"first message",
+    "sender": "lior"
+
+}
+###
+
+GET http://localhost:3000/post
+###
+
+GET http://localhost:3000/post?sender=kfir
+###
+
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email" : "lior@t.com",
+    "password" : "222222"
+}
+
+
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email" : "lior@t.com",
+    "password" : "2282222"
+}
+
+###
+
+GET http://localhost:3000/auth/test2
